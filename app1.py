@@ -6,7 +6,7 @@ import os
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 import logging
-
+ 
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
