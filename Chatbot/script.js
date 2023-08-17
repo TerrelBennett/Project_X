@@ -127,7 +127,7 @@ function submitFeedback() {
 
 function sendFeedback(feedback) {
     // Send the feedback to the backend using fetch API
-    fetch('https://127.0.0.1:5000/submit_feedback', {
+    fetch('https://ai-v1.herokuapp.com/submit_feedback', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -169,7 +169,7 @@ function toggleApiActivation() {
 
 function toggleApi() {
     // Send a request to toggle the API activation status
-    fetch('https://127.0.0.1:5000/toggle_api', {
+    fetch('https://ai-v1.herokuapp.com/toggle_api', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -192,7 +192,7 @@ function sendMessage() {
         displayMessage(userMessage, "user");
 
         // Send the user message to the backend using fetch API
-        fetch('https://127.0.0.1:5000/get_response', {
+        fetch('https://ai-v1.herokuapp.com/get_response', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -238,7 +238,7 @@ function teachChatbot(event) {
     const chatbotResponse = teachInput.value;
 
     // Send the user message and chatbot response to the backend using fetch API
-    fetch('https://127.0.0.1:5000/teach', {
+    fetch('https://ai-v1.herokuapp.com/teach', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
