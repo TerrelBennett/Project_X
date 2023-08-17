@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="Chatbot/styles.css">
+</head>
+
+<body>
+    
+    <div id="chat-container">
+        
+        <div class="sidebar">
+            <button id="chat-gpt-button">Add Chat GPT</button>
+            <p class="chatgpt-instructions">Make Your AI Smarter ^.^</p>
+            <div class="rapid-api-container">
+                <input type="text" id="search-input" placeholder="Search Here for Apps...">
+                <button class="rapidapi-search-button" id="search-button">Search</button>
+                <ol>
+                    <li>Search for APIs</li>
+                    <li>Find One You Like</li>
+                    <li>Submit It Below</li>
+                </ol>
+                <p class="rapid-instructions">You can find a variety of different features like 
+                Chat GPT using the search above!<br><br>  
+                Let us know below so we can add another button 
+                to your AI (^-^).</p>
+            </div>
+            
+            <textarea id="feedback-input" rows="6" placeholder="What other features would you like your AI to do"required></textarea>
+            <button id="feedback-button" type="button">Submit Feedback</button>
+            
+        </div>
+
+        <div class="sidebar-2"></div>
+
+        <div id="chat-area"></div>
+
+        <div class="sidebar-2"></div>
+
+        <div class="sidebar">
+            <button id="save-button">Save Chat History</button>
+        </div>
+
+    </div>
+
+    <div class="user-area draggable">
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+        <div class="input-container">
+            <input type="text" id="teach-input" placeholder="Teach the answer...">
+            <button id="teach-button">Teach</button>
+        </div>
+    </div>
+
+    <script src="Chatbot/script.js"></script>
+
+</body>
+
+</html>
