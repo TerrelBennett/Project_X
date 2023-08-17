@@ -5,12 +5,7 @@ import openai
 import os
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
-import logging
- 
 
-# Set up logging
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger(__name__)
 
 load_dotenv()
 openai.api_key = os.environ.get("OPENAI_API_KEY")
