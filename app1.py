@@ -14,7 +14,7 @@ api_key_activated = False
 app = Flask(__name__)
 
 
-CORS(app, supports_credentials=True, origins=['https://your-ai-ivory.vercel.app'])
+CORS(app, supports_credentials=True, origins=['http://127.0.0.1:5500'])
 app.config["SECRET_KEY"] = os.urandom(24)
 app.config["SESSION_PERMANENT"] = True
 app.config["SESSION_TYPE"] = "filesystem"
@@ -145,4 +145,4 @@ def store_feedback(feedback_text):
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()
-    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000))) 
+    app.run(debug=True) 
